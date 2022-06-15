@@ -2,7 +2,7 @@
   background-color: rgb(186, 181, 181);
 }
 
-.editor {
+.user-settings {
   margin: 30px;
 }
 
@@ -11,5 +11,13 @@
 }
 
 .go-to-editor {
+  margin: 30px;
+}
+
+.gallery {
+  display: none;
+}
+
+.btn {
   margin: 30px;
 }

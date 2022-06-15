@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body onload="init()">
-    <nav><a href="gallery.html">Gallery</a></nav>
+    <button class="gallery-btn btn" onclick="showGallery()">Gallery</button>
+    <button class="Editor-btn btn" onclick="showEditor()">Editor</button>
+    <section class="gallery"></section>
     <section class="editor">
-      <label for="txt-input">Text:</label>
-      <input
-        type="text"
-        id="txt-input"
-        name="txt-input"
-        value="Enter your text here"
-        onchange="onNewInput(this.value)"
-      />
+      <div class="user-settings">
+        <label for="txt-input">Text:</label>
+        <input
+          type="text"
+          id="txt-input"
+          name="txt-input"
+          value="Enter your text here"
+          onchange="onNewInput(this.value)"
+        />
+      </div>
+      <canvas class="my-meme" height="500" width="500"></canvas>
     </section>
-    <canvas class="my-meme" height="500" width="500"></canvas>
     <script src="js/memeController.js"></script>
     <script src="js/memeService.js"></script>
     <script src="js/galleryController.js"></script>

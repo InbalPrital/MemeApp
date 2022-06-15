@@ -3,8 +3,7 @@ var gCtx
 
 function init() {
   renderMeme()
-  // renderGallery()
-  console.log('gMemefirst', gMeme)
+  renderGallery()
 }
 
 function renderMeme() {
@@ -33,4 +32,11 @@ function drawText(text, x, y) {
 function onNewInput(newTxt) {
   setLineTxt(newTxt)
   renderMeme()
+}
+
+function showEditor() {
+  var elEditor = document.querySelector('.editor')
+  elEditor.style.display = 'block'
+  var elGallery = document.querySelector('.gallery')
+  elGallery.style.display = 'none'
 }

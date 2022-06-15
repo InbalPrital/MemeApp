@@ -1,4 +1,9 @@
-renderGallery()
+function showGallery() {
+  var elGallery = document.querySelector('.gallery')
+  elGallery.style.display = 'block'
+  var elEditor = document.querySelector('.editor')
+  elEditor.style.display = 'none'
+}
 
 function renderGallery() {
   // var images = getImages()
@@ -13,6 +18,6 @@ function renderGallery() {
 
 function onImgSelect(img) {
   setImage(img)
-  console.log('gMeme after', gMeme)
-  //   renderMeme()
+  renderMeme()
+  showEditor()
 }

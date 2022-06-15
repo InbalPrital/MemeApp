@@ -22,7 +22,6 @@ function getMeme() {
 
 function setLineTxt(newTxt) {
   gMeme.lines[0].txt = newTxt
-  console.log('gMeme', gMeme)
   return gMeme
 }
 
@@ -31,8 +30,6 @@ function getImages() {
 }
 
 function setImage(img) {
-  console.log('img', img.id)
   gMeme.selectedImgId = +img.id
-  console.log(gMeme)
   return gMeme
 }
