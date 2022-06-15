@@ -3,6 +3,8 @@ var gCtx
 
 function init() {
   renderMeme()
+  // renderGallery()
+  console.log('gMemefirst', gMeme)
 }
 
 function renderMeme() {
@@ -12,7 +14,6 @@ function renderMeme() {
   console.log('currMemeId', currMeme.selectedImgId)
   var memeTxt = currMeme.lines[0].txt
   base_image = new Image()
-
   base_image.onload = function () {
     gCtx.drawImage(base_image, 0, 0)
     drawText(memeTxt, 40, 50)
