@@ -23,8 +23,8 @@ function renderMeme() {
 
 function drawText(text, x, y) {
   gCtx.lineWidth = 2
-  gCtx.strokeStyle = 'brown'
-  gCtx.fillStyle = 'black'
+  gCtx.strokeStyle = 'white'
+  gCtx.fillStyle = 'white'
   gCtx.font = '40px Arial'
   gCtx.fillText(text, x, y)
   gCtx.strokeText(text, x, y)
