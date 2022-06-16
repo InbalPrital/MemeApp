@@ -1,6 +1,6 @@
 function showGallery() {
   var elGallery = document.querySelector('.gallery')
-  elGallery.style.display = 'block'
+  elGallery.style.display = 'flex'
   var elEditor = document.querySelector('.editor')
   elEditor.style.display = 'none'
 }

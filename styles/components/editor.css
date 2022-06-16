@@ -1,0 +1,53 @@
+.my-meme {
+  background-color: rgb(186, 181, 181);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.gallery {
+  display: none;
+}
+
+.insert-text,
+.insert-color,
+.insert-size {
+  background-color: rgb(51, 139, 147);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 30px;
+}
+
+.switch-btn {
+  background: content-box;
+  border: none;
+  padding: 0;
+  font-size: 30px;
+}
+
+.switch-btn:hover {
+  cursor: pointer;
+}
+
+.set-color {
+  font-size: 2rem;
+}
+
+.txt-input {
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.size-btn {
+  font-size: 1.5rem;
+}
+
+.size-btn:hover {
+  cursor: pointer;
+}
+
+.color-options:hover {
+  cursor: pointer;
+}

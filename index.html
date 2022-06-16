@@ -5,24 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme App</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body onload="init()">
-    <button class="gallery-btn btn" onclick="showGallery()">Gallery</button>
-    <button class="Editor-btn btn" onclick="showEditor()">Editor</button>
-    <section class="gallery"></section>
-    <section class="editor">
-      <div class="user-settings">
-        <label for="txt-input">Text:</label>
-        <input
-          type="text"
-          id="txt-input"
-          name="txt-input"
-          value="Enter your text here"
-          onchange="onNewInput(this.value)"
-        />
-      </div>
-      <canvas class="my-meme" height="500" width="500"></canvas>
+    <section class="main-layout">
+      <header>
+        <button class="gallery-btn btn" onclick="showGallery()">Gallery</button>
+        <button class="editor-btn btn" onclick="showEditor()">Editor</button>
+      </header>
+      <section class="gallery"></section>
+      <section class="editor">
+        <canvas class="my-meme" height="500" width="500"></canvas>
+        <div class="user-settings">
+          <div class="insert-text">
+            <label for="txt-input"></label>
+            <input
+              type="text"
+              class="txt-input"
+              name="txt-input"
+              value="Enter your text here"
+              onchange="onNewInput(this.value)"
+            />
+            <button onclick="onSwitchLine()" class="switch-btn">🔃</button>
+          </div>
+          <div class="insert-color">
+            <label for="set-color" class="set-color">🎨</label>
+            <input
+              type="color"
+              name="color"
+              class="color-options"
+              onchange="onSetColor(this.value)"
+            />
+          </div>
+          <div class="insert-size">
+            <button onclick="onIncreaseFont()" class="size-btn">A+</button>
+            <button onclick="onDecreaseFont()" class="size-btn">A-</button>
+          </div>
+        </div>
+      </section>
     </section>
     <script src="js/memeController.js"></script>
     <script src="js/memeService.js"></script>

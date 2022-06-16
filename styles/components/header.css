@@ -1,0 +1,16 @@
+header {
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin: 15px;
+  color: white;
+  font-weight: 700;
+  background: content-box;
+  border: none;
+  font-size: 1.4rem;
+}
