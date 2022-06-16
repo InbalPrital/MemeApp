@@ -1,5 +1,4 @@
 .main-layout {
-  /* max-width: 1500px; */
   max-height: 83vh;
   margin: 0 auto;
   padding: 1.6rem;
@@ -17,19 +16,9 @@
   justify-content: space-evenly;
 }
 
-.canvas-layout {
-  border-radius: 20px;
-}
-
-.editor-layout {
-  border-radius: 20px;
-}
-
 .user-settings {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(61, 60, 60);
-  border-radius: 20px;
   align-items: stretch;
 }

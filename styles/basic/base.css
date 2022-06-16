@@ -3,11 +3,10 @@
 }
 
 html {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Courier New', Courier, monospacess;
 }
 
 body {
   margin: 0;
-  /* font-size: 1rem; */
   background-color: rgb(51, 139, 147);
 }

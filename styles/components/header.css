@@ -14,3 +14,7 @@ header {
   border: none;
   font-size: 1.4rem;
 }
+
+.btn:hover {
+  cursor: pointer;
+}
