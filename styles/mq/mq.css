@@ -1,0 +1,26 @@
+@media (max-width: 640px) {
+  .main-layout {
+    max-height: 100vh;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+  .editor {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .insert-text,
+  .insert-color,
+  .insert-size {
+    border-radius: 20px;
+    padding: 2px;
+    margin: 3px;
+    text-align: center;
+  }
+
+  .txt-input {
+    font-size: 4.7vw;
+    border-radius: 8px;
+  }
+}
