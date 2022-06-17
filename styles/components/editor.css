@@ -9,7 +9,8 @@
 
 .insert-text,
 .insert-color,
-.insert-size {
+.size-and-align,
+.buttons {
   background-color: rgb(51, 139, 147);
   border-radius: 20px;
   padding: 15px;
@@ -47,4 +48,24 @@
 
 .size-btn:hover {
   cursor: pointer;
+}
+
+.align {
+  height: 1.3rem;
+}
+
+.clean-btn {
+  border-radius: 8px;
+  background-color: #cf1d37;
+  border: none;
+}
+
+.on-clean-btn {
+  height: 25px;
+  padding-top: 5px;
+}
+
+.download-btn,
+.upload-btn {
+  font-size: 1rem;
 }

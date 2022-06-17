@@ -23,10 +23,11 @@
               type="text"
               class="txt-input"
               name="txt-input"
-              value="Enter your text here"
+              value="Write your text here.."
               onchange="onNewInput(this.value)"
             />
             <button onclick="onSwitchLine()" class="switch-btn">🔃</button>
+            <button onclick="onCleanLine()" class="clean-btn"><img src="images/clean-btn.png" class="on-clean-btn"/></button>
           </div>
           <div class="insert-color">
             <label for="set-color" class="set-color">🎨</label>
@@ -37,15 +38,30 @@
               onchange="onSetColor(this.value)"
             />
           </div>
-          <div class="insert-size">
+          <div class="size-and-align">
             <button onclick="onIncreaseFont()" class="size-btn">A+</button>
             <button onclick="onDecreaseFont()" class="size-btn">A-</button>
+           <button onclick="onAlignLeft()"><img src="images/align-left.png" class="align left-btn"/></button> 
+           <button onclick="onAlignRight()"><img src="images/align-right.png" class="align right-btn"/></button> 
           </div>
-        </div>
+              <div class="buttons">
+                <button onclick="onDoneEditing()" class="done-btn">Done</button>
+      <button class="download-btn">
+        <a href="#" onclick="downloadCanvas(this)" download="file-name"
+          >Download</a
+        >
+      </button>
+      <button class="upload-btn" onclick="uploadImg()">
+        Upload
+      </button>
+      <p class="user-msg"></p>
+      <div class="share-container"></div>
+    </div>
       </section>
     </section>
     <script src="js/memeController.js"></script>
     <script src="js/memeService.js"></script>
     <script src="js/galleryController.js"></script>
+    <script src="js/upload.service.js"></script>
   </body>
 </html>
