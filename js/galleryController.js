@@ -23,5 +23,12 @@ function renderGallery() {
     (image) =>
       `<img src="images/${image.id}.jpg" id="${image.id}" class="images img-${image.id}" onclick="onImgSelect(this)" />`
   )
-  document.querySelector('.gallery').innerHTML += strHtml.join('')
+  // document.querySelector('.gallery').innerHTML += strHtml.join('')
+  document.querySelector('.images-gal').innerHTML += strHtml.join('')
+}
+
+function onMakeRandom() {
+  makeRandom()
+  renderMeme()
+  showEditor()
 }

@@ -21,6 +21,24 @@ var gImgs = [
   { id: 18, url: 'imges/18.jpg', keywords: ['funny', 'cat'] },
 ]
 
+const memesSentences = [
+  'I never eat falafel',
+  'I love it all',
+  'Round and round we go',
+  'Armed in knowledge',
+  'How many times??',
+  'The best thing!',
+  'Happy times',
+  'Be curfull',
+  'Sing along',
+  'I know that you know',
+  'Can we share?',
+  'you are one of a kind',
+  'But if we could',
+  'What is this?',
+  'I will tell you how!',
+]
+
 var gMeme = {
   selectedImgId: 2,
   selectedLineIdx: 0,
@@ -125,4 +143,32 @@ function alignRight() {
 
 function doneEdinting() {
   gDoneEditing = true
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function randomColor() {
+  var color = Math.floor(Math.random() * 16777216).toString(16)
+  return '#000000'.slice(0, -color.length) + color
+}
+
+function makeRandom() {
+  gMeme.selectedImgId = getRandomInt(1, 18)
+  var linesNum = getRandomInt(1, 2)
+  var randomSize = getRandomInt(20, 40)
+  var newRandomColor = randomColor()
+  gMeme.lines[0].txt = memesSentences[getRandomInt(1, 15)]
+  gMeme.lines[0].size = randomSize
+  gMeme.lines[0].color = newRandomColor
+  if (linesNum === 2) {
+    gMeme.lines[1].txt = memesSentences[getRandomInt(0, 14)]
+    gMeme.lines[1].size = randomSize
+    gMeme.lines[1].color = newRandomColor
+  } else {
+    gMeme.lines[1].txt = ' '
+  }
 }

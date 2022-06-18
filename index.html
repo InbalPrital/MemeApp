@@ -14,7 +14,10 @@
         <button class="gallery-btn btn" onclick="showGallery()">Gallery</button>
         <button class="editor-btn btn chosen-page" onclick="showEditor()">Editor</button>
       </header>
-      <section class="gallery"></section>
+      <section class="gallery">
+           <button onclick="onMakeRandom()" class="flexible-btn">I'm flexible</button>
+        <section class="images-gal"></section>
+      </section>
       <section class="editor">
         <canvas class="my-meme" height="500" width="500"></canvas>
         <div class="user-settings">
@@ -25,7 +28,7 @@
               onfocus="this.value=''"
               class="txt-input"
               name="txt-input"
-              value="I love it when"
+              value="Write your text here..."
               oninput="onNewInput(this.value)"
             />
           </div>

@@ -1,11 +1,25 @@
 .images {
-  height: 150px;
+  height: 120px;
   border-radius: 8px;
   margin: 10px;
 }
 
 .gallery {
+  display: none;
+}
+
+.images-gal {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 3px;
-  display: none;
+  text-align: center;
+}
+
+.flexible-btn {
+  width: 130px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #32bd6f;
+  color: white;
 }
