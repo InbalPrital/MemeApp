@@ -126,12 +126,3 @@
   border: none;
 }
 
-.btn {
-  padding: 7px 12px;
-}
-
-.btn:hover {
-  background-color: white;
-  color: green;
-  border-radius: 8px;
-}
