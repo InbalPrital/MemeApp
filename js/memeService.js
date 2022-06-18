@@ -26,15 +26,15 @@ var gMeme = {
   selectedLineIdx: 0,
   lines: [
     {
-      txt: 'I sometimes eat Falafel',
-      size: 40,
+      txt: 'I love it when',
+      size: 35,
       align: 30,
       color: 'black',
     },
     {
-      txt: 'I love it!',
-      size: 40,
-      align: 30,
+      txt: 'we eat Falafel',
+      size: 35,
+      align: 150,
       color: 'black',
     },
   ],

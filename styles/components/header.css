@@ -2,7 +2,7 @@ header {
   /* background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); */
   background: linear-gradient(-86deg, #33be6d 0%, #0c98b9 100%);
   border-radius: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -10,12 +10,26 @@ header {
 .btn {
   margin: 15px;
   color: white;
-  font-weight: 700;
-  background: content-box;
+  /* font-weight: 700; */
+  /* background: content-box; */
   border: none;
   font-size: 1.4rem;
+  padding: 7px 12px;
+  background-color: unset;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
   cursor: pointer;
+  background-color: rgb(223, 223, 223);
+  color: green;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.chosen-page {
+  background-color: white;
+  color: green;
+  border-radius: 10px;
+  font-weight: 500;
 }

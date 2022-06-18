@@ -3,6 +3,10 @@ function showGallery() {
   elGallery.style.display = 'grid'
   var elEditor = document.querySelector('.editor')
   elEditor.style.display = 'none'
+  var elGalleryBtn = document.querySelector('.gallery-btn')
+  elGalleryBtn.classList.add('chosen-page')
+  var elEditorBtn = document.querySelector('.editor-btn')
+  elEditorBtn.classList.remove('chosen-page')
 }
 
 function onImgSelect(img) {

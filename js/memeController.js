@@ -58,6 +58,10 @@ function showEditor() {
   elEditor.style.display = 'flex'
   var elGallery = document.querySelector('.gallery')
   elGallery.style.display = 'none'
+  var elEditorBtn = document.querySelector('.editor-btn')
+  elEditorBtn.classList.add('chosen-page')
+  var elGalleryBtn = document.querySelector('.gallery-btn')
+  elGalleryBtn.classList.remove('chosen-page')
 }
 
 function onSetColor(color) {
