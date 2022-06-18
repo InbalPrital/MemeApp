@@ -1,18 +1,11 @@
-function showGallery() {
-  var elGallery = document.querySelector('.gallery')
-  elGallery.style.display = 'grid'
-  var elEditor = document.querySelector('.editor')
-  elEditor.style.display = 'none'
-  var elGalleryBtn = document.querySelector('.gallery-btn')
-  elGalleryBtn.classList.add('chosen-page')
-  var elEditorBtn = document.querySelector('.editor-btn')
-  elEditorBtn.classList.remove('chosen-page')
+function onShowGallery() {
+  showGallery()
 }
 
 function onImgSelect(img) {
   setImage(img)
   renderMeme()
-  showEditor()
+  onShowEditor()
 }
 
 function renderGallery() {
@@ -23,12 +16,11 @@ function renderGallery() {
     (image) =>
       `<img src="images/${image.id}.jpg" id="${image.id}" class="images img-${image.id}" onclick="onImgSelect(this)" />`
   )
-  // document.querySelector('.gallery').innerHTML += strHtml.join('')
   document.querySelector('.images-gal').innerHTML += strHtml.join('')
 }
 
 function onMakeRandom() {
   makeRandom()
   renderMeme()
-  showEditor()
+  onShowEditor()
 }

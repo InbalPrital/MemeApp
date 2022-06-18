@@ -11,8 +11,8 @@
   <body onload="init()">
     <section class="main-layout">
       <header>
-        <button class="gallery-btn btn" onclick="showGallery()">Gallery</button>
-        <button class="editor-btn btn chosen-page" onclick="showEditor()">Editor</button>
+        <button class="gallery-btn btn" onclick="onShowGallery()">Gallery</button>
+        <button class="editor-btn btn chosen-page" onclick="onShowEditor()">Editor</button>
       </header>
       <section class="gallery">
            <button onclick="onMakeRandom()" class="flexible-btn">I'm flexible</button>
@@ -54,12 +54,13 @@
                 <button onclick="onDoneEditing()" class="done-btn"> <i class="fa-solid fa-check"></i> Done</button>
       <button class="download-btn">
         <a href="#" class="download-link-btn" onclick="downloadCanvas(this)" download="file-name"
-          ><img src="images/dowload.png" class="download-file-btn"/> Download</button></a
-        >
+          ><img src="images/dowload.png" class="download-file-btn"/> Download</button></a>
       </button>
     </div>
       </section>
     </section>
+      <script src="js/sentencesAndImagesData.js"></script>
+      <script src="js/util.js"></script>
     <script src="js/memeController.js"></script>
     <script src="js/memeService.js"></script>
     <script src="js/galleryController.js"></script>

@@ -36,7 +36,8 @@
   font-size: 2rem;
 }
 
-.color-options:hover {
+.color-options:hover,
+.size-btn:hover {
   cursor: pointer;
 }
 
@@ -45,14 +46,6 @@
   border-radius: 8px;
   border: none;
 }
-
-.size-btn:hover {
-  cursor: pointer;
-}
-
-/* .align {
-  height: 1.3rem;
-} */
 
 .clean-btn {
   border-radius: 8px;
@@ -125,4 +118,3 @@
   border-radius: 8px;
   border: none;
 }
-

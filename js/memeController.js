@@ -9,12 +9,10 @@ function init() {
 function renderMeme() {
   gCanvas = document.querySelector('.my-meme')
   gCtx = gCanvas.getContext('2d')
-  var currMeme = getMeme()
-  console.log('currMemeId', currMeme.selectedImgId)
-  var memeTxt1 = currMeme.lines[0].txt
-  var memeTxt2 = currMeme.lines[1].txt
-  var align1 = currMeme.lines[0].align
-  var align2 = currMeme.lines[1].align
+  var memeTxt1 = gMeme.lines[0].txt
+  var memeTxt2 = gMeme.lines[1].txt
+  var align1 = gMeme.lines[0].align
+  var align2 = gMeme.lines[1].align
   base_image = new Image()
   base_image.onload = function () {
     gCtx.drawImage(base_image, 0, 0)
@@ -27,7 +25,7 @@ function renderMeme() {
     drawText(memeTxt1, align1, 50, 0)
     drawText(memeTxt2, align2, 400, 1)
   }
-  base_image.src = `images/${currMeme.selectedImgId}.jpg`
+  base_image.src = `images/${gMeme.selectedImgId}.jpg`
 }
 
 function drawText(text, x, y, idx) {
@@ -39,11 +37,6 @@ function drawText(text, x, y, idx) {
   gCtx.strokeText(text, x, y)
 }
 
-function onNewInput(newTxt) {
-  setLineTxt(newTxt)
-  renderMeme()
-}
-
 function drawRect(x, y) {
   gCtx.beginPath()
   gCtx.rect(x, y, 460, 60)
@@ -53,15 +46,13 @@ function drawRect(x, y) {
   gCtx.stroke()
 }
 
-function showEditor() {
-  var elEditor = document.querySelector('.editor')
-  elEditor.style.display = 'flex'
-  var elGallery = document.querySelector('.gallery')
-  elGallery.style.display = 'none'
-  var elEditorBtn = document.querySelector('.editor-btn')
-  elEditorBtn.classList.add('chosen-page')
-  var elGalleryBtn = document.querySelector('.gallery-btn')
-  elGalleryBtn.classList.remove('chosen-page')
+function onShowEditor() {
+  showEditor()
+}
+
+function onNewInput(newTxt) {
+  setLineTxt(newTxt)
+  renderMeme()
 }
 
 function onSetColor(color) {

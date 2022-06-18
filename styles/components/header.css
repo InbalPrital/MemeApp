@@ -1,5 +1,4 @@
 header {
-  /* background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); */
   background: linear-gradient(-86deg, #33be6d 0%, #0c98b9 100%);
   border-radius: 20px;
   margin-bottom: 0.8rem;
@@ -10,8 +9,6 @@ header {
 .btn {
   margin: 15px;
   color: white;
-  /* font-weight: 700; */
-  /* background: content-box; */
   border: none;
   font-size: 1.4rem;
   padding: 7px 12px;
