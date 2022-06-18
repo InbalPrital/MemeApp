@@ -1,33 +1,31 @@
 .user-settings {
   background-color: rgb(61, 60, 60);
   border-radius: 20px;
+  align-items: center;
 }
 
 .my-meme {
   background-color: rgb(186, 181, 181);
 }
 
-.insert-text,
-.insert-color,
-.size-and-align,
-.buttons {
-  background-color: rgb(51, 139, 147);
+.settings-btns {
+  background-color: #19a59f;
   border-radius: 20px;
-  padding: 15px;
-  margin: 30px;
+  padding: 20px 50px;
 }
 
 .txt-input {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   border-radius: 8px;
   padding: 5px;
+  margin: 10px;
 }
 
 .switch-btn {
   background: content-box;
   border: none;
   padding: 0;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .switch-btn:hover {
@@ -43,29 +41,87 @@
 }
 
 .size-btn {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  border-radius: 8px;
+  border: none;
 }
 
 .size-btn:hover {
   cursor: pointer;
 }
 
-.align {
+/* .align {
   height: 1.3rem;
-}
+} */
 
 .clean-btn {
   border-radius: 8px;
   background-color: #cf1d37;
   border: none;
+  width: fit-content;
+  margin-left: 20px;
 }
 
 .on-clean-btn {
-  height: 25px;
+  height: 35px;
   padding-top: 5px;
 }
 
+.download-btn {
+  background-color: #8f44bb;
+}
+
+.done-btn {
+  background-color: #00d26a;
+}
+
 .download-btn,
-.upload-btn {
+.done-btn {
   font-size: 1rem;
+  border-radius: 15px;
+  padding: 7px 15px;
+  border: 0.5px solid black;
+  color: white;
+  font-weight: 700;
+}
+
+.download-btn:hover,
+.done-btn {
+  cursor: pointer;
+}
+
+.download-file-btn {
+  text-decoration: none;
+}
+
+.download-link-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.done-btn {
+  padding-top: 4px;
+}
+
+.buttons {
+  margin: auto;
+}
+
+.fa-check {
+  font-size: 1.7rem;
+}
+
+.switch-clean-btns {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.color-container {
+  text-align: center;
+}
+
+.aligns {
+  border-radius: 8px;
+  border: none;
 }

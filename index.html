@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme App</title>
+    <script src="https://kit.fontawesome.com/05e0ee5ddd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body onload="init()">
@@ -21,16 +22,23 @@
             <label for="txt-input"></label>
             <input
               type="text"
+              onfocus="this.value=''"
               class="txt-input"
               name="txt-input"
-              value="Write your text here.."
-              onchange="onNewInput(this.value)"
+              value="I sometimes eat Falafel"
+              oninput="onNewInput(this.value)"
             />
-            <button onclick="onSwitchLine()" class="switch-btn">🔃</button>
+          </div>
+          <div class="switch-clean-btns">
+           <button onclick="onSwitchLine()" class="switch-btn">🔃</button>
             <button onclick="onCleanLine()" class="clean-btn"><img src="images/clean-btn.png" class="on-clean-btn"/></button>
           </div>
-          <div class="insert-color">
-            <label for="set-color" class="set-color">🎨</label>
+          <div class="settings-btns">
+            <button onclick="onIncreaseFont()" class="size-btn"><img src="images/A+.png" class="increase-btn"/></button>
+            <button onclick="onDecreaseFont()" class="size-btn"><img src="images/A-.png" class="decrease-btn"/></button></button>
+           <button onclick="onAlignLeft()" class="aligns"><img src="images/align-left.png" class="align left-btn"/></button> 
+           <button onclick="onAlignRight()" class="aligns"><img src="images/align-right.png" class="align right-btn"/></button> 
+           <div class="color-container"><label for="set-color" class="set-color">🎨</label>
             <input
               type="color"
               name="color"
@@ -38,30 +46,19 @@
               onchange="onSetColor(this.value)"
             />
           </div>
-          <div class="size-and-align">
-            <button onclick="onIncreaseFont()" class="size-btn">A+</button>
-            <button onclick="onDecreaseFont()" class="size-btn">A-</button>
-           <button onclick="onAlignLeft()"><img src="images/align-left.png" class="align left-btn"/></button> 
-           <button onclick="onAlignRight()"><img src="images/align-right.png" class="align right-btn"/></button> 
-          </div>
+          </div> 
               <div class="buttons">
-                <button onclick="onDoneEditing()" class="done-btn">Done</button>
+                <button onclick="onDoneEditing()" class="done-btn"> <i class="fa-solid fa-check"></i> Done</button>
       <button class="download-btn">
-        <a href="#" onclick="downloadCanvas(this)" download="file-name"
-          >Download</a
+        <a href="#" class="download-link-btn" onclick="downloadCanvas(this)" download="file-name"
+          ><img src="images/dowload.png" class="download-file-btn"/> Download</button></a
         >
       </button>
-      <button class="upload-btn" onclick="uploadImg()">
-        Upload
-      </button>
-      <p class="user-msg"></p>
-      <div class="share-container"></div>
     </div>
       </section>
     </section>
     <script src="js/memeController.js"></script>
     <script src="js/memeService.js"></script>
     <script src="js/galleryController.js"></script>
-    <script src="js/upload.service.js"></script>
   </body>
 </html>
